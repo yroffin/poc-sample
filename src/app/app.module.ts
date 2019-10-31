@@ -10,6 +10,8 @@ import { ToolbarModule } from 'primeng/toolbar';
 import { ButtonModule } from 'primeng/button';
 import { SplitButtonModule } from 'primeng/splitbutton';
 import { TabViewModule } from 'primeng/tabview';
+import { MessagesModule } from 'primeng/messages';
+import { MessageModule } from 'primeng/message';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { TabViewModule } from 'primeng/tabview';
     ToolbarModule,
     ButtonModule,
     SplitButtonModule,
-    TabViewModule
+    TabViewModule,
+    MessagesModule,
+    MessageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

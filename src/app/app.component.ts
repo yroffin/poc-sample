@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'poc';
+  msgs = [{ severity: 'error', summary: 'Alerte méteo', detail: '...' }];
 }
