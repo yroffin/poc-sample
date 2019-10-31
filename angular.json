@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "toto": {
+    "poc": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/toto",
+            "outputPath": "dist/poc",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -60,18 +60,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "toto:build"
+            "browserTarget": "poc:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "toto:build:production"
+              "browserTarget": "poc:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "toto:build"
+            "browserTarget": "poc:build"
           }
         },
         "test": {
@@ -105,7 +105,7 @@
         }
       }
     },
-    "toto-e2e": {
+    "poc-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -114,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "toto:serve"
+            "devServerTarget": "poc:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "toto:serve:production"
+              "devServerTarget": "poc:serve:production"
             }
           }
         },
@@ -134,5 +134,5 @@
       }
     }
   },
-  "defaultProject": "toto"
+  "defaultProject": "poc"
 }
